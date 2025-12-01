@@ -270,7 +270,7 @@ const TranslatorApp = () => {
       <div className="container-lux">
         {/* Header */}
         <div className="header-lux">
-          <h1>Universal Translator</h1>
+          <h1>Real Time language Translator</h1>
           <p>Seamless translation with **Elite Voice Integration**</p>
         </div>
 

@@ -75,7 +75,7 @@ export default function Login({ onLogin }) {
           <Lock className="lock-icon" />
 
           <h1 className="title">ACCESS</h1>
-          <p className="subtitle">Universal Translator Suite</p>
+          <p className="subtitle">Real Time Language Translator</p>
         </div>
 
         <form onSubmit={handleSubmit} className="login-form">
