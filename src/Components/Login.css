@@ -1,0 +1,178 @@
+/* --- General Page Layout --- */
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #000, #0f0f0f, #1a1a1a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* --- Background Luxury Glows --- */
+.glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.glow-1 {
+  top: 30%;
+  left: 30%;
+  width: 350px;
+  height: 350px;
+  background: rgba(255, 180, 80, 0.25);
+}
+
+.glow-2 {
+  bottom: 25%;
+  right: 20%;
+  width: 280px;
+  height: 280px;
+  background: rgba(255, 210, 130, 0.15);
+}
+
+/* --- Login Card --- */
+.login-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 3rem;
+  background: rgba(20, 20, 20, 0.55);
+  border-radius: 24px;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 190, 100, 0.2);
+  box-shadow: 0 0 40px rgba(255, 200, 120, 0.15);
+}
+
+/* --- Header --- */
+.login-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.lock-icon {
+  width: 70px;
+  height: 70px;
+  color: #fbbf24;
+  filter: drop-shadow(0 0 15px rgba(255, 200, 120, 0.7));
+}
+
+.title {
+  margin-top: 1rem;
+  font-size: 3.3rem;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  color: #fcd34d;
+}
+
+.subtitle {
+  color: #aaaaaa;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* --- Inputs --- */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.input-label {
+  color: #fbbf24;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+}
+
+.lux-input {
+  width: 100%;
+  padding: 14px;
+  background: rgba(40, 40, 40, 0.6);
+  border: 1px solid #555;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.25s;
+}
+
+.lux-input:focus {
+  border-color: #fbbf24;
+  box-shadow: 0 0 10px rgba(255, 200, 120, 0.4);
+}
+
+/* --- Error Message --- */
+.error-box {
+  padding: 10px;
+  background: rgba(150, 0, 0, 0.4);
+  border: 1px solid #aa3333;
+  color: #ffbbbb;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* --- Login Button --- */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 1.6rem;
+  background: linear-gradient(to right, #fbbf24, #fcd34d);
+  color: #111;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(255, 200, 120, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: 0.25s;
+}
+
+.login-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* --- Loader Animation --- */
+.loader-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* --- Demo Box --- */
+.demo-box {
+  margin-top: 2.6rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(120, 120, 120, 0.4);
+  text-align: center;
+  font-size: 0.9rem;
+  color: #bbbbbb;
+}
+
+.demo-title {
+  color: #fbbf24;
+  font-weight: bold;
+}
+
+.demo-value {
+  font-family: monospace;
+  color: #fcd34d;
+}
